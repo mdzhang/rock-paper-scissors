@@ -5,7 +5,8 @@
  */
 var utils = require('../utils');
 
-function BeatLastMoveStrategy() {}
+function BeatLastMoveStrategy() {
+}
 
 BeatLastMoveStrategy.prototype.getMove = function(opponentLastMove) {
   return opponentLastMove ? utils.getBreakingMove(opponentLastMove) : utils.getRandomMove();

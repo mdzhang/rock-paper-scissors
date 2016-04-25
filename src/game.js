@@ -41,8 +41,8 @@ function _parseMove(move) {
 function Game(strategy) {
   var self = this;
 
-  self.strategy = null;       // the strategy the player will play against
-  self.rl = null;             // used to interact with the command line
+  self.strategy = null; // the strategy the player will play against
+  self.rl = null; // used to interact with the command line
   self.lastPlayerMove = null;
   self.playerWins = 0;
   self.strategyWins = 0;
@@ -89,14 +89,14 @@ Game.prototype.start = function() {
       }
 
       self.rl.prompt();
-    } catch(e) {
+    } catch (e) {
       console.log(e.message);
       self.rl.prompt();
     }
   })
-  .on('close', () => {
-    self.quit();
-  });
+    .on('close', () => {
+      self.quit();
+    });
 };
 
 Game.prototype.quit = function() {

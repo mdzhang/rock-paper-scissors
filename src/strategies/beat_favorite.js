@@ -9,10 +9,10 @@ var utils = require('../utils');
 function BeatFavoriteStrategy() {
   var self = this;
 
-  self.opponentMoveFrequencyMap = {};     // maps all possible RPS moves to the number
-                                          // of times the user has thrown that move
-  self.opponentFavoriteMove = null;       // one of constants.RPS_MOVES; the opponent's most
-                                          // most commonly thrown move
+  // maps all possible RPS moves to the number of times the user has thrown that move
+  self.opponentMoveFrequencyMap = {};
+  // one of constants.RPS_MOVES; the opponent's most most commonly thrown move
+  self.opponentFavoriteMove = null;
 
   constants.RPS_MOVE_NAMES.forEach(function(move) {
     self.opponentMoveFrequencyMap[move] = 0;
@@ -27,7 +27,7 @@ BeatFavoriteStrategy.prototype.getMove = function(opponentLastMove) {
 
     if (self.opponentFavoriteMove) {
       if (self.opponentMoveFrequencyMap[opponentLastMove] >
-          self.opponentMoveFrequencyMap[self.opponentFavoriteMove]) {
+        self.opponentMoveFrequencyMap[self.opponentFavoriteMove]) {
         self.opponentFavoriteMove = opponentLastMove;
       }
     } else {
@@ -36,7 +36,7 @@ BeatFavoriteStrategy.prototype.getMove = function(opponentLastMove) {
   }
 
   return self.opponentFavoriteMove ? utils.getBreakingMove(self.opponentFavoriteMove) :
-      utils.getRandomMove();
+    utils.getRandomMove();
 };
 
 BeatFavoriteStrategy.prototype.toString = function() {

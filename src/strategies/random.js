@@ -5,7 +5,8 @@
  */
 var utils = require('../utils');
 
-function RandomStrategy() {}
+function RandomStrategy() {
+}
 
 RandomStrategy.prototype.getMove = function() {
   return utils.getRandomMove();
