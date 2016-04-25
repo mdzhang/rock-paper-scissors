@@ -31,7 +31,7 @@ Guide intended for Mac OS X.
 
         * Replace the `<version>` with the current known working version. The latest version numbers are in a box below.
 
-* Install [git]() on your machine
+* Install [git](https://git-scm.com/) on your machine
 
     `brew install git`
 
@@ -55,13 +55,15 @@ Guide intended for Mac OS X.
 This repo is known to work with:
 
 * node: `5.8.0`
-* npm: `3.7.3`
+* npm: `3.8.8`
+
+## Testing
+
+`npm test`
 
 ## Usage
 
-From the command line at the package's top level directory:
-
-`$ node index.js [strategy]`
+`node index.js [strategy]`
 
 Available strategies
 
