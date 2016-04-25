@@ -1,0 +1,21 @@
+{
+  "curly": true,
+  "esversion": 6,
+  "eqeqeq": false,
+  "freeze": true,
+  "funcscope": false,
+  "futurehostile": true,
+  "globals": {
+  },
+  "latedef": true,
+  "maxdepth": 3,
+  "nocomma": true,
+  "nonbsp": true,
+  "nonew": true,
+  "shadow": false,
+  "strict": "global",
+  "undef": true,
+  "unused": true,
+  "mocha": true,
+  "node": true
+}

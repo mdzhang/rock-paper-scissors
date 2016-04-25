@@ -1,0 +1,22 @@
+{
+  "name": "rock-paper-scissor",
+  "version": "1.0.0",
+  "description": "A rock paper scissors implementation in Javascript",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "author": {
+    "name": "Michelle D. Zhang",
+    "email": "zhang.michelle.d@gmail.com",
+    "url": "mdzhang.com"
+  }
+}
